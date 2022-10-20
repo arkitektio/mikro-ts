@@ -1,6 +1,6 @@
 {
   "name": "@jhnnsrs/mikro",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
@@ -55,8 +55,6 @@
   },
   "peerDependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router": "^6.4.1",
-    "react-router-dom": "^6.4.1"
+    "react-dom": "^18.2.0"
   }
 }
