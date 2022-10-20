@@ -1,5 +1,5 @@
 {
-  "name": "mikrots",
+  "name": "@jhnnsrs/mikro",
   "version": "0.0.4",
   "license": "MIT",
   "scripts": {
@@ -7,18 +7,19 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "mikro": "graphql-codegen --config mikro.yml"
+    "mikro": "graphql-codegen --config mikro.yml",
+    "p": "yarn publish --access public"
   },
   "files": [
     "dist"
   ],
-  "main": "./dist/mikrots.umd.js",
-  "module": "./dist/mikrots.mjs",
+  "main": "./dist/mikro.umd.js",
+  "module": "./dist/mikro.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/mikrots.mjs",
-      "require": "./dist/mikrots.umd.js"
+      "import": "./dist/mikro.mjs",
+      "require": "./dist/mikro.umd.js"
     }
   },
   "dependencies": {
