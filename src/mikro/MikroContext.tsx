@@ -5,14 +5,10 @@ import { useQuery } from "@apollo/client";
 export type MikroContextType = {
   client?: MikroClient;
   configure: (config: MikroConfig) => void;
-  s3resolve: (path?: string | null) => string;
   config?: MikroConfig;
 };
 
 export const MikroContext = React.createContext<MikroContextType>({
-  s3resolve: () => {
-    throw Error("No Provider in context not configured");
-  },
   configure: () => {
     throw Error("No Provider in context not configured");
   },

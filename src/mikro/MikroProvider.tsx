@@ -19,18 +19,10 @@ export const MikroProvider: React.FC<MikroProps> = ({ children }) => {
     setClient(createMikroClient(config));
   };
 
-  const s3resolve = (path?: string | null) => {
-    if (config) {
-      return config.s3resolve(path);
-    }
-    return "fallback";
-  };
-
   return (
     <MikroContext.Provider
       value={{
         client: client,
-        s3resolve: s3resolve,
         configure: configure,
         config: config,
       }}

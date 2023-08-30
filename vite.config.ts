@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/mikro/index.tsx",
-      name: "mikrots",
+      name: "mikro",
     },
     rollupOptions: {
       external: [

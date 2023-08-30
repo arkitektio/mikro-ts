@@ -13,17 +13,10 @@ export const MikroAutoConfigure: React.FC<{}> = (props) => {
     if (token && fakts.mikro) {
       configure({
         secure: fakts.mikro.secure,
-        datalayer: fakts.mikro.datalayer,
         wsEndpointUrl: fakts.mikro.ws_endpoint_url,
         endpointUrl: fakts.mikro.endpoint_url,
         possibleTypes: result.possibleTypes,
         retrieveToken: () => token,
-        s3resolve: (path?: string | null) => {
-          if (path) {
-            return fakts.s3.resolve(path);
-          }
-          return "fallback";
-        },
       });
     }
   }, [token, fakts]);
