@@ -1,6 +1,6 @@
 {
   "name": "@jhnnsrs/mikro",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,6 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/mikro.umd.js",
   "module": "./dist/mikro.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -22,7 +21,10 @@
       "require": "./dist/mikro.umd.js"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "apollo-upload-client": "^17.0.0",
+    "subscriptions-transport-ws": "^0.11.0"
+  },
   "devDependencies": {
     "@graphql-codegen/add": "^3.2.1",
     "@graphql-codegen/cli": "^2.8.1",
@@ -51,9 +53,7 @@
   },
   "peerDependencies": {
     "@apollo/client": "^3.7.0",
-    "apollo-upload-client": "^17.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "subscriptions-transport-ws": "^0.11.0"
+    "react-dom": "^18.2.0"
   }
 }
