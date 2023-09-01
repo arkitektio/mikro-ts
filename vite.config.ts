@@ -4,7 +4,7 @@ import dts from "vite-plugin-dts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), dts()],
+  plugins: [dts({ rollupTypes: true }), react()],
 
   server: {
     port: 3000,
@@ -14,6 +14,7 @@ export default defineConfig({
     lib: {
       entry: "src/mikro/index.tsx",
       name: "mikro",
+      formats: ["es"],
     },
     rollupOptions: {
       external: [

@@ -1,12 +1,12 @@
-import {
-  MikroContextType,
-  useMikro,
-  withMikro,
-  useMikroQuery,
-} from "./MikroContext";
+import { useMikro, withMikro, useMikroQuery } from "./MikroContext";
 import { MikroProps, MikroProvider } from "./MikroProvider";
 import { MikroGuard, mikroGuarded } from "./MikroGuard";
-import type { MikroClient, MikroConfig } from "./types";
+import type {
+  MikroClient,
+  MikroConfig,
+  MikroContextType,
+  MikroState,
+} from "./types";
 import { createMikroClient } from "./client";
 
 export {
@@ -18,4 +18,10 @@ export {
   useMikroQuery,
   createMikroClient,
 };
-export type { MikroClient, MikroConfig, MikroContextType, MikroProps };
+export type {
+  MikroClient,
+  MikroConfig,
+  MikroContextType,
+  MikroProps,
+  MikroState,
+};

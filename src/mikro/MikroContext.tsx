@@ -1,12 +1,6 @@
-import { MikroClient, MikroConfig } from "./types";
-import React, { useContext } from "react";
 import { useQuery } from "@apollo/client";
-
-export type MikroContextType = {
-  client?: MikroClient;
-  configure: (config: MikroConfig) => void;
-  config?: MikroConfig;
-};
+import React, { useContext } from "react";
+import { MikroContextType } from "./types";
 
 export const MikroContext = React.createContext<MikroContextType>({
   configure: () => {

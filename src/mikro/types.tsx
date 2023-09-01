@@ -12,4 +12,13 @@ export type MikroConfig = {
   possibleTypes?: PossibleTypesMap;
 };
 
+export type MikroState = {
+  config?: MikroConfig;
+  client?: MikroClient;
+};
+
+export type MikroContextType = MikroState & {
+  configure: (config?: MikroConfig) => void;
+};
+
 export type MikroClient = ApolloClient<NormalizedCacheObject>;
