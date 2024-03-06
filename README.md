@@ -1,3 +1,4 @@
-# herre
+# mikro-ts
 
-Implements an Oauth2/Openid connect authorization-code protocol
+The typescript clients for the mikro service,
+at this point a minimal graphql client wrapper
